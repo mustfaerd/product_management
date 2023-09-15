@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1124</width>
+    <height>690</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1100</width>
+    <height>690</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1124</width>
+    <height>694</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel{
+background-color: rgb(255,255,255);
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;
+border-radius: 12px;
+}
+
+QPushButton{
+color: rgb(0,,0,0);
+background-color: rgb(255,255,255);
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;
+border-radius: 12px;
+}
+
+QLineEdit{
+color: rgb(0,,0,0);
+background-color: rgb(255,255,255);
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;
+border-radius: 12px;
+}
+
+QComboBox{
+color: rgb(0,,0,0);
+background-color: rgb(255,255,255);
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;
+border-radius: 12px;
+}
+
+QTableView{
+background-image: url(:/images/Images/table_background.png);
+color: rgb(0,,0,0);
+background-color: rgb(255,255,255);
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;
+border-radius: 12px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="1">
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>1100</width>
+        <height>635</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+	background-image: url(:/images/Images/page_background.jpeg);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QStackedWidget" name="stackedWidget_1">
+         <property name="maximumSize">
+          <size>
+           <width>1076</width>
+           <height>611</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="login_page">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <widget class="QPushButton" name="register_button">
+           <property name="geometry">
+            <rect>
+             <x>560</x>
+             <y>370</y>
+             <width>291</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0,,0,0);
+background-color: rgb(255,255,255);
+font-size:20px;
+font-weight:bold;
+border-radius: 12px;
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;</string>
+           </property>
+           <property name="text">
+            <string>Kaydol</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="password_forgetten_button">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>410</y>
+             <width>521</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0,,0,0);
+background-color: rgb(255,255,255);
+font-size:20px;
+font-weight:bold;
+border-radius: 12px;
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;</string>
+           </property>
+           <property name="text">
+            <string>Şifremi Unuttum</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="login_button">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>370</y>
+             <width>281</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0,,0,0);
+background-color: rgb(255,255,255);
+font-size:20px;
+font-weight:bold;
+border-radius: 12px;
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;</string>
+           </property>
+           <property name="text">
+            <string>Giriş </string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_10">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>110</y>
+             <width>141</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-image: url(:/images/Images/bms_145x145.jpg);
+
+background-color: rgb(255, 255, 255);
+border-radius: 70px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="username_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>280</y>
+             <width>711</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0,,0,0);
+background-color: rgb(255,255,255);
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;
+border-radius: 12px;
+</string>
+           </property>
+           <property name="placeholderText">
+            <string>Kullanıcı adı...</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="password_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>329</y>
+             <width>631</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0,,0,0);
+background-color: rgb(255,255,255);
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;
+border-radius: 12px;</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+           <property name="placeholderText">
+            <string>Şifre...</string>
+           </property>
+          </widget>
+          <widget class="QFrame" name="frame_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>-10</y>
+             <width>1101</width>
+             <height>621</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>Images/icon-removebg-preview.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page">
+          <widget class="QComboBox" name="register_about_comboBox">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>250</y>
+             <width>711</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <item>
+            <property name="text">
+             <string>---Lütfen Çalıştığınız Birimi Seçiniz---</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ekip Şefi</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Yönetim</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Teknik Servis</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPushButton" name="register_user_buton">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>410</y>
+             <width>281</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Kaydol</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="register_username_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>289</y>
+             <width>631</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="placeholderText">
+            <string>Kullanıcı Adı...</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="security_key_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>370</y>
+             <width>391</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="placeholderText">
+            <string>Güvenlik Anahtarı...</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="register_password_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>280</x>
+             <y>330</y>
+             <width>521</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="placeholderText">
+            <string>Şifre...</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_12">
+           <property name="geometry">
+            <rect>
+             <x>470</x>
+             <y>50</y>
+             <width>141</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-image: url(:/images/Images/bms_145x145.jpg);
+
+background-color: rgb(255, 255, 255);
+border-radius: 70px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="back_main_menu_button">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>450</y>
+             <width>111</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Geri</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="main_screen_page">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="1" column="0">
+            <widget class="QTabWidget" name="tabWidget">
+             <property name="minimumSize">
+              <size>
+               <width>1054</width>
+               <height>589</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="tab">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <attribute name="title">
+               <string>URUN</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <widget class="QStackedWidget" name="stackedWidget_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>1026</width>
+                   <height>538</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>1026</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="currentIndex">
+                  <number>1</number>
+                 </property>
+                 <widget class="QWidget" name="product_info_page">
+                  <property name="minimumSize">
+                   <size>
+                    <width>1026</width>
+                    <height>538</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <widget class="QLabel" name="model_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>720</x>
+                     <y>10</y>
+                     <width>281</width>
+                     <height>31</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-image: url(:/images/Images/table_background.png);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="delete_line_Button">
+                   <property name="geometry">
+                    <rect>
+                     <x>200</x>
+                     <y>490</y>
+                     <width>171</width>
+                     <height>28</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>HAT SİL</string>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="serial_no_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>20</x>
+                     <y>10</y>
+                     <width>281</width>
+                     <height>31</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-image: url(:/images/Images/table_background.png);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="back_button">
+                   <property name="geometry">
+                    <rect>
+                     <x>650</x>
+                     <y>490</y>
+                     <width>171</width>
+                     <height>28</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>GERİ</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="add_line_button">
+                   <property name="geometry">
+                    <rect>
+                     <x>20</x>
+                     <y>490</y>
+                     <width>171</width>
+                     <height>28</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>HAT EKLE</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="excel_export_button">
+                   <property name="geometry">
+                    <rect>
+                     <x>830</x>
+                     <y>490</y>
+                     <width>171</width>
+                     <height>28</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>EXCEL</string>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="name_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>380</x>
+                     <y>10</y>
+                     <width>281</width>
+                     <height>31</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>-1</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-image: url(:/images/Images/table_background.png);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="update_product_info_button">
+                   <property name="geometry">
+                    <rect>
+                     <x>380</x>
+                     <y>490</y>
+                     <width>261</width>
+                     <height>28</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>GÜNCELLE</string>
+                   </property>
+                  </widget>
+                  <widget class="QTableView" name="product_info_tableView">
+                   <property name="geometry">
+                    <rect>
+                     <x>20</x>
+                     <y>50</y>
+                     <width>981</width>
+                     <height>431</height>
+                    </rect>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>981</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0,,0,0);
+background-image: url(:/images/Images/table_background.png);
+background-color: rgb(255,255,255);
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;
+border-radius: 12px;</string>
+                   </property>
+                   <property name="editTriggers">
+                    <set>QAbstractItemView::AllEditTriggers</set>
+                   </property>
+                   <property name="dragEnabled">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </widget>
+                 <widget class="QWidget" name="products_page">
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <widget class="QTableView" name="products_tableView">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>30</y>
+                     <width>741</width>
+                     <height>411</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0,,0,0);
+background-image: url(:/images/Images/table_background.png);
+background-color: rgb(255,255,255);
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;
+border-radius: 12px;</string>
+                   </property>
+                   <property name="verticalScrollBarPolicy">
+                    <enum>Qt::ScrollBarAlwaysOff</enum>
+                   </property>
+                   <property name="horizontalScrollBarPolicy">
+                    <enum>Qt::ScrollBarAsNeeded</enum>
+                   </property>
+                   <property name="sizeAdjustPolicy">
+                    <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                  <widget class="QComboBox" name="search_product_name_comboBox">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>450</y>
+                     <width>691</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>Boran1</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Boran2</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Aybars1</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Aybars2</string>
+                    </property>
+                   </item>
+                  </widget>
+                  <widget class="QPushButton" name="search_by_name_button">
+                   <property name="geometry">
+                    <rect>
+                     <x>710</x>
+                     <y>450</y>
+                     <width>41</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>?</string>
+                   </property>
+                  </widget>
+                  <widget class="QLineEdit" name="search_serial_number_lineEdit">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>500</y>
+                     <width>551</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Seri Numara...</string>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="search_by_serial_no_button">
+                   <property name="geometry">
+                    <rect>
+                     <x>570</x>
+                     <y>500</y>
+                     <width>181</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>Ara</string>
+                   </property>
+                  </widget>
+                  <widget class="QLineEdit" name="new_serial_no_lineEdit">
+                   <property name="geometry">
+                    <rect>
+                     <x>770</x>
+                     <y>30</y>
+                     <width>251</width>
+                     <height>51</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Seri Numarası</string>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                  <widget class="QComboBox" name="new_product_model_comboBox">
+                   <property name="geometry">
+                    <rect>
+                     <x>770</x>
+                     <y>90</y>
+                     <width>251</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="placeholderText">
+                    <string/>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>Boran1</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Boran2</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Aybars1</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Aybars2</string>
+                    </property>
+                   </item>
+                  </widget>
+                  <widget class="QPushButton" name="add_new_product_button">
+                   <property name="geometry">
+                    <rect>
+                     <x>770</x>
+                     <y>140</y>
+                     <width>91</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>Kaydet</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="quit_button">
+                   <property name="geometry">
+                    <rect>
+                     <x>930</x>
+                     <y>140</y>
+                     <width>91</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>Çıkış</string>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_14">
+                   <property name="geometry">
+                    <rect>
+                     <x>830</x>
+                     <y>270</y>
+                     <width>141</width>
+                     <height>141</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-image: url(:/images/Images/bms_145x145.jpg);
+
+background-color: rgb(255, 255, 255);
+border-radius: 70px;
+</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="storage_page">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <attribute name="title">
+               <string>DEPO</string>
+              </attribute>
+              <widget class="QLineEdit" name="warehouse_add_name_line">
+               <property name="geometry">
+                <rect>
+                 <x>210</x>
+                 <y>250</y>
+                 <width>131</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="placeholderText">
+                <string>Malzeme </string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="wareouse_amount_line">
+               <property name="geometry">
+                <rect>
+                 <x>350</x>
+                 <y>250</y>
+                 <width>111</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="placeholderText">
+                <string>Miktar</string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="warehouse_add_button">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>290</y>
+                 <width>451</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Ekle</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="wareouse_update_amount_line">
+               <property name="geometry">
+                <rect>
+                 <x>350</x>
+                 <y>20</y>
+                 <width>121</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Miktar</string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="warehouse_update_button">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>60</y>
+                 <width>461</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Güncelle</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="warehouse_update_name_line">
+               <property name="geometry">
+                <rect>
+                 <x>210</x>
+                 <y>20</y>
+                 <width>131</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Malzeme </string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QTableView" name="warehouse_tableViw">
+               <property name="geometry">
+                <rect>
+                 <x>580</x>
+                 <y>10</y>
+                 <width>461</width>
+                 <height>471</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-image: url(:/images/Images/table_background.png);
+color: rgb(0,,0,0);
+background-color: rgb(255,255,255);
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;
+border-radius: 12px;</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="search_supplies_by_name_lineEdit">
+               <property name="geometry">
+                <rect>
+                 <x>580</x>
+                 <y>490</y>
+                 <width>351</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="placeholderText">
+                <string>Malzeme ismi...</string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="search_supplies_by_name_button">
+               <property name="geometry">
+                <rect>
+                 <x>940</x>
+                 <y>490</y>
+                 <width>111</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Ara</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="warehouse_delete_button">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>500</y>
+                 <width>451</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Sil</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="warehouse_delete_name_line">
+               <property name="geometry">
+                <rect>
+                 <x>240</x>
+                 <y>460</y>
+                 <width>221</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Malzeme </string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>20</y>
+                 <width>191</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background:transparent;
+color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Ürün Güncelleme</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_2">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>250</y>
+                 <width>191</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background:transparent;
+color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Yeni Ürün </string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_3">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>460</y>
+                 <width>221</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background:transparent;
+color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string> Ürün Silme</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="product_for_material_page_pushButton">
+               <property name="geometry">
+                <rect>
+                 <x>580</x>
+                 <y>530</y>
+                 <width>241</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Ürün Düzenle</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="product_for_material_page_pushButton_exel">
+               <property name="geometry">
+                <rect>
+                 <x>840</x>
+                 <y>530</y>
+                 <width>211</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Excel</string>
+               </property>
+              </widget>
+              <zorder>warehouse_add_name_line</zorder>
+              <zorder>wareouse_amount_line</zorder>
+              <zorder>warehouse_add_button</zorder>
+              <zorder>wareouse_update_amount_line</zorder>
+              <zorder>warehouse_update_button</zorder>
+              <zorder>warehouse_update_name_line</zorder>
+              <zorder>warehouse_tableViw</zorder>
+              <zorder>search_supplies_by_name_lineEdit</zorder>
+              <zorder>search_supplies_by_name_button</zorder>
+              <zorder>warehouse_delete_button</zorder>
+              <zorder>warehouse_delete_name_line</zorder>
+              <zorder>label</zorder>
+              <zorder>label_3</zorder>
+              <zorder>product_for_material_page_pushButton</zorder>
+              <zorder>product_for_material_page_pushButton_exel</zorder>
+              <zorder>label_2</zorder>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_2">
+          <widget class="QPushButton" name="product_for_material_update_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>270</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Güncelle</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="product_for_material_comboBox">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>90</y>
+             <width>561</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <item>
+            <property name="text">
+             <string>Boran1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Boran2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Aybars1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Aybars2</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QTableView" name="product_for_material_tableView">
+           <property name="geometry">
+            <rect>
+             <x>610</x>
+             <y>40</y>
+             <width>461</width>
+             <height>541</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0,,0,0);
+background-image: url(:/images/Images/table_background.png);
+background-color: rgb(255,255,255);
+font-family: &quot;Calibri&quot;;
+font-weight:bold;
+font-size:23px;
+border-radius: 12px;</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="product_for_material_name_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>140</y>
+             <width>471</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="placeholderText">
+            <string>Malzeme ismi...</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="product_for_material_amount_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>190</y>
+             <width>381</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="placeholderText">
+            <string>Malzeme miktarı...</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="product_for_material_add_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>270</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Ekle</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="product_for_material_delete_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>470</x>
+             <y>240</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Sil</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="product_for_material_search_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>250</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Ara</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_13">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>320</y>
+             <width>141</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-image: url(:/images/Images/bms_145x145.jpg);
+
+background-color: rgb(255, 255, 255);
+border-radius: 70px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="back_storage_page_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>490</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Geri</string>
+           </property>
+          </widget>
+          <zorder>product_for_material_update_pushButton</zorder>
+          <zorder>product_for_material_comboBox</zorder>
+          <zorder>product_for_material_name_lineEdit</zorder>
+          <zorder>product_for_material_amount_lineEdit</zorder>
+          <zorder>product_for_material_add_pushButton</zorder>
+          <zorder>product_for_material_delete_pushButton</zorder>
+          <zorder>product_for_material_search_pushButton</zorder>
+          <zorder>label_13</zorder>
+          <zorder>back_storage_page_pushButton</zorder>
+          <zorder>product_for_material_tableView</zorder>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1124</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>username_lineEdit</tabstop>
+  <tabstop>password_lineEdit</tabstop>
+  <tabstop>login_button</tabstop>
+  <tabstop>register_button</tabstop>
+  <tabstop>password_forgetten_button</tabstop>
+  <tabstop>search_product_name_comboBox</tabstop>
+  <tabstop>search_by_name_button</tabstop>
+  <tabstop>search_serial_number_lineEdit</tabstop>
+  <tabstop>search_by_serial_no_button</tabstop>
+  <tabstop>new_serial_no_lineEdit</tabstop>
+  <tabstop>new_product_model_comboBox</tabstop>
+  <tabstop>add_new_product_button</tabstop>
+  <tabstop>quit_button</tabstop>
+  <tabstop>products_tableView</tabstop>
+  <tabstop>add_line_button</tabstop>
+  <tabstop>delete_line_Button</tabstop>
+  <tabstop>update_product_info_button</tabstop>
+  <tabstop>back_button</tabstop>
+  <tabstop>excel_export_button</tabstop>
+  <tabstop>product_info_tableView</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>warehouse_update_name_line</tabstop>
+  <tabstop>wareouse_update_amount_line</tabstop>
+  <tabstop>warehouse_update_button</tabstop>
+  <tabstop>warehouse_add_name_line</tabstop>
+  <tabstop>wareouse_amount_line</tabstop>
+  <tabstop>warehouse_add_button</tabstop>
+  <tabstop>warehouse_delete_name_line</tabstop>
+  <tabstop>warehouse_delete_button</tabstop>
+  <tabstop>search_supplies_by_name_lineEdit</tabstop>
+  <tabstop>search_supplies_by_name_button</tabstop>
+  <tabstop>warehouse_tableViw</tabstop>
+  <tabstop>register_about_comboBox</tabstop>
+  <tabstop>register_username_lineEdit</tabstop>
+  <tabstop>register_password_lineEdit</tabstop>
+  <tabstop>security_key_lineEdit</tabstop>
+  <tabstop>register_user_buton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

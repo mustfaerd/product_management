@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="images">
+    <file>Images/bms_145x145.jpg</file>
+    <file>Images/icon.png</file>
+    <file>Images/page_background.jpeg</file>
+    <file>Images/icon-removebg-preview.png</file>
+    <file>Images/table_background.png</file>
+  </qresource>
+</RCC>
